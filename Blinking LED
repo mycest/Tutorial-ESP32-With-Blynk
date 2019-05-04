@@ -1,0 +1,31 @@
+//Tutorial CS
+//For Project Consultant = 019-6076807,014-8318534
+
+//----------------------------------------------------
+
+#define BLYNK_PRINT Serial
+#include <WiFi.h>
+#include <WiFiClient.h>
+#include <BlynkSimpleEsp32.h>
+
+//----------------------------------------------------
+
+char auth[] = "62a49fb8838a46328a57ca37f8d75acb";
+char ssid[] = "max";
+char pass[] = "kangkung";
+
+//----------------------------------------------------
+
+void setup()
+{
+  Serial.begin(9600);
+  Blynk.begin(auth, ssid, pass);
+}
+
+//----------------------------------------------------
+
+void loop()
+{
+  Blynk.run();
+
+}
